@@ -1,2 +1,3 @@
 O que aprendemos hoje?
-  
+	Aprendemos como funciona o modelo de WebRequest e WebResponse
+	Vimos as diferenças entre os diversos templates do Visual Studio para ASP.NET
