@@ -10,7 +10,13 @@
     <form id="form1" runat="server">
         <div>
             <a href="AreaAdministrativa/ConsultaMedicos.aspx">AreaAdministrativa/ConsultaMedicos.aspx</a>
-        </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <a href="AreaAdministrativa/CadastroDeMedico.aspx">CadastroDeMedico.aspx</a><br />
+            <br />
+            <a href="AreaAberta/PesquisaDeMedico.aspx">PesquisaDeMedico.aspx</a></div>
     </form>
 </body>
 </html>

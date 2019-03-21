@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterAdm.master.cs" Inherits="CadeMeuMedico.AreaAdministrativa.MasterAdm" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div style="background-color:aqua">
+                <h1>Meu Médico Administração</h1>
+            </div>
+            <hr />
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+            <div>
+
+                <asp:Label ID="lblData" runat="server" Text="Label"></asp:Label>
+
+                </div>
+        </div>
+    </form>
+</body>
+</html>
