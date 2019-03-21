@@ -1,3 +1,13 @@
 O que aprendemos hoje?
 	Aprendemos como funciona o modelo de WebRequest e WebResponse
-	Vimos as diferenças entre os diversos templates do Visual Studio para ASP.NET
+	Vimos as diferenÃ§as entre os diversos templates do Visual Studio para ASP.NET
+	
+	
+	Decompilador
+	https://www.jetbrains.com/decompiler/download/download-thanks.html?platform=windowsWeb
+	
+	Obfuscador
+	https://marketplace.visualstudio.com/items?itemName=PreEmptiveSolutions.NETObfuscator-Dotfuscator
+
+	Cade meu medico
+	https://github.com/JonatasAfonso/formacaoAspNetWebForms201903
