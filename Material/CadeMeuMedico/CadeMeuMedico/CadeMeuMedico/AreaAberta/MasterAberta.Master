@@ -10,10 +10,17 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="background-color:red">
+        <div style="background-color: red">
             <h1>Meu Medico - Área aberta</h1>
         </div>
 
+        <hr />
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+        <hr />
+
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
 
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

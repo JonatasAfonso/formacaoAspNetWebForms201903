@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="default.aspx" title="Home"  description="Página de entrada">
+
+    <siteMapNode url="" title="Area Administrativa"  description="">
+      <siteMapNode url="AreaAdministrativa/CadastroDeMedico.aspx" title="Cadastro de Médico"  description="" />
+      <siteMapNode url="AreaAdministrativa/ConsultaMedicos.aspx" title="Consulta de Médicos"  description="" />
+    </siteMapNode>
+
+    <siteMapNode url="" title="Área do Cliente"  description="">
+      <siteMapNode url="AreaAberta/PesquisaDeMedico.aspx" title="Pesquisa de Médicos"  description="" />
+    </siteMapNode>
+    
+    
+  </siteMapNode>
+</siteMap>

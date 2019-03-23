@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Produtos.asxp" title="Produtos"  description="">
+
+    <siteMapNode url="GrandesEletrodomesticos.aspx" title="Grandes Eletrodomesticos">
+      <siteMapNode url="Refrigeradores1.aspx" title="Refrigeradores"  description="" />
+      <siteMapNode url="Televisoes1.aspx" title="Televisoes"  description="" />
+    </siteMapNode>
+
+
+    <siteMapNode url="Eletrodomesticos.aspx" title="Eletrodomésticos"  description="">
+      <siteMapNode url="Refrigeradores2.aspx" title="Refrigeradores"  description="" />
+      <siteMapNode url="Televisoes2.aspx" title="Televisoes"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
