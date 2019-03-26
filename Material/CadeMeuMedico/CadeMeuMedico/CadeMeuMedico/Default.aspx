@@ -9,21 +9,16 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <h1>Cade meu médico</h1>
-
-            <hr />
-            <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
-            <hr />
-
             <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
             </asp:Menu>
-            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
-
+ <%--  --%>
+            <h1>Cade meu médico</h1>
         </div>
     </form>
 
     <hr />
     WebSiteDeveloperCompany 2019
+     <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
 
 </body>
 </html>

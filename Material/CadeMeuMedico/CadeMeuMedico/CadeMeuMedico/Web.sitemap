@@ -3,6 +3,7 @@
   <siteMapNode url="default.aspx" title="Home"  description="Página de entrada">
 
     <siteMapNode url="" title="Area Administrativa"  description="">
+      <siteMapNode url="AreaAdministrativa/CadastroDeEspecialidade.aspx" title="Cadastro de Especialidade"  description="" />
       <siteMapNode url="AreaAdministrativa/CadastroDeMedico.aspx" title="Cadastro de Médico"  description="" />
       <siteMapNode url="AreaAdministrativa/ConsultaMedicos.aspx" title="Consulta de Médicos"  description="" />
     </siteMapNode>
