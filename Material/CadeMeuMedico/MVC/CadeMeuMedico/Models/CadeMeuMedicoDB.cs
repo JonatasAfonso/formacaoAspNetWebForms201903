@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity;
 
 namespace CadeMeuMedico.Models
 {
@@ -10,10 +6,11 @@ namespace CadeMeuMedico.Models
     {
         public CadeMeuMedicoDB() : base("name=MedicosDB")
         {  }
-
-        
+                
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Cidade> Cidades { get; set; }
         public DbSet<Especialidade> Especialidades { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<DicionarioHash> DicionarioHash { get; set; }        
     } 
 }

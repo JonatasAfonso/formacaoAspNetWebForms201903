@@ -96,10 +96,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\TestesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -107,11 +110,25 @@
     <Compile Include="Migrations\201903282129099_primera publiccao.Designer.cs">
       <DependentUpon>201903282129099_primera publiccao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903301005288_PrimeiraMigracao.cs" />
+    <Compile Include="Migrations\201903301005288_PrimeiraMigracao.Designer.cs">
+      <DependentUpon>201903301005288_PrimeiraMigracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903301030204_AdicionadoUsuarios.cs" />
+    <Compile Include="Migrations\201903301030204_AdicionadoUsuarios.Designer.cs">
+      <DependentUpon>201903301030204_AdicionadoUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903301246464_FalhaDeSeguranca.cs" />
+    <Compile Include="Migrations\201903301246464_FalhaDeSeguranca.Designer.cs">
+      <DependentUpon>201903301246464_FalhaDeSeguranca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CadeMeuMedicoDB.cs" />
     <Compile Include="Models\Cidade.cs" />
+    <Compile Include="Models\DicionarioHash.cs" />
     <Compile Include="Models\Especialidade.cs" />
     <Compile Include="Models\Medico.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -126,11 +143,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="Views\Testes\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903282129099_primera publiccao.resx">
       <DependentUpon>201903282129099_primera publiccao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903301005288_PrimeiraMigracao.resx">
+      <DependentUpon>201903301005288_PrimeiraMigracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903301030204_AdicionadoUsuarios.resx">
+      <DependentUpon>201903301030204_AdicionadoUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903301246464_FalhaDeSeguranca.resx">
+      <DependentUpon>201903301246464_FalhaDeSeguranca.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
