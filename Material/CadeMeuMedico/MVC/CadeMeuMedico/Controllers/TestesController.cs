@@ -128,7 +128,7 @@ namespace CadeMeuMedico.Controllers
                 Nome = nome,
                 Email = email,
                 ConfirmacaoEmail = confirmacao,
-                Senha = CalculateMD5Hash(senha)
+                Senha = Criptografia.CalculateMD5Hash(senha)
             };
 
             var db = new CadeMeuMedicoDB();
@@ -175,32 +175,12 @@ namespace CadeMeuMedico.Controllers
                 Nome = "Marta",
                 Email = "marta@marta.pt",
                 ConfirmacaoEmail = "marta@marta.pt",
-                Senha = CalculateMD5Hash("minahSenha0")
+                Senha = Criptografia.CalculateMD5Hash("minahSenha0")
             };
 
             AdicionarUsuarioPorObjeto(usuarioNovo);
         }
 
-
-
-
-
-
-        private string CalculateMD5Hash(string input)
-        {
-            // step 1, calculate MD5 hash from input
-            MD5 md5 = System.Security.Cryptography.MD5.Create();
-            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
-            byte[] hash = md5.ComputeHash(inputBytes);
-
-            // step 2, convert byte array to hex string
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < hash.Length; i++)
-            {
-                sb.Append(hash[i].ToString("X2"));
-            }
-            return sb.ToString();
-        }
 
         public void AdicionarUsuarioEFalhaSeguranca(string nome, string email, string confirmacao, string senha)
         {
@@ -212,7 +192,7 @@ namespace CadeMeuMedico.Controllers
                 Nome = nome,
                 Email = email,
                 ConfirmacaoEmail = confirmacao,
-                Senha = CalculateMD5Hash(senha)
+                Senha = Criptografia.CalculateMD5Hash(senha)
             };
 
             var db = new CadeMeuMedicoDB();
