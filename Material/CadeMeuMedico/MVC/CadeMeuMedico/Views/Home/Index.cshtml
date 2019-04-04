@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jumbotron">
+    <h1 class="display-4">Cadê Meu Médico</h1>
+    <p class="lead">
+        O melhor aplicativo do mundo para consulta de médicos.
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="btn btn-primary">
+            @Html.ActionLink("Médicos", "Index", "Medicos")
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="btn btn-primary">
+            @Html.ActionLink("Cidades", "Index", "Cidades")
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="btn btn-primary">
+            @Html.ActionLink("Especialidade", "Index", "Especialidade")
+        </div>
+    </div>
+</div>

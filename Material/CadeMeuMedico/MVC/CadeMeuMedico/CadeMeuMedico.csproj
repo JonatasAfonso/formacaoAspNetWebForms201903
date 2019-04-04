@@ -117,8 +117,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\bootstrapAreainterna.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -146,6 +146,7 @@
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="Controllers\CidadesController.cs" />
     <Compile Include="Controllers\EspecialidadeController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MedicosController.cs" />
     <Compile Include="Controllers\TestesController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
@@ -160,21 +161,9 @@
     <Compile Include="Migrations\201903301005288_PrimeiraMigracao.Designer.cs">
       <DependentUpon>201903301005288_PrimeiraMigracao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201903301030204_AdicionadoUsuarios.cs" />
-    <Compile Include="Migrations\201903301030204_AdicionadoUsuarios.Designer.cs">
-      <DependentUpon>201903301030204_AdicionadoUsuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201903301246464_FalhaDeSeguranca.cs" />
-    <Compile Include="Migrations\201903301246464_FalhaDeSeguranca.Designer.cs">
-      <DependentUpon>201903301246464_FalhaDeSeguranca.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904021956448_AdiconadaDescricaoEspecialidade.cs" />
-    <Compile Include="Migrations\201904021956448_AdiconadaDescricaoEspecialidade.Designer.cs">
-      <DependentUpon>201904021956448_AdiconadaDescricaoEspecialidade.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904022036421_ABombar2.cs" />
-    <Compile Include="Migrations\201904022036421_ABombar2.Designer.cs">
-      <DependentUpon>201904022036421_ABombar2.cs</DependentUpon>
+    <Compile Include="Migrations\201904041838531_MigracaoFinal.cs" />
+    <Compile Include="Migrations\201904041838531_MigracaoFinal.Designer.cs">
+      <DependentUpon>201904041838531_MigracaoFinal.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CadeMeuMedicoDB.cs" />
@@ -212,6 +201,9 @@
     <Content Include="Views\Usuarios\Details.cshtml" />
     <Content Include="Views\Usuarios\Edit.cshtml" />
     <Content Include="Views\Usuarios\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutAreaInterna.cshtml" />
+    <Content Include="Views\Testes\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -221,7 +213,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Testes\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201903282129099_primera publiccao.resx">
@@ -230,17 +221,8 @@
     <EmbeddedResource Include="Migrations\201903301005288_PrimeiraMigracao.resx">
       <DependentUpon>201903301005288_PrimeiraMigracao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903301030204_AdicionadoUsuarios.resx">
-      <DependentUpon>201903301030204_AdicionadoUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903301246464_FalhaDeSeguranca.resx">
-      <DependentUpon>201903301246464_FalhaDeSeguranca.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904021956448_AdiconadaDescricaoEspecialidade.resx">
-      <DependentUpon>201904021956448_AdiconadaDescricaoEspecialidade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904022036421_ABombar2.resx">
-      <DependentUpon>201904022036421_ABombar2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904041838531_MigracaoFinal.resx">
+      <DependentUpon>201904041838531_MigracaoFinal.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

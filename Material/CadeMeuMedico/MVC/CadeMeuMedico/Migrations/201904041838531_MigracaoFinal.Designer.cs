@@ -7,13 +7,13 @@ namespace CadeMeuMedico.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class ABombar2 : IMigrationMetadata
+    public sealed partial class MigracaoFinal : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ABombar2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(MigracaoFinal));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904022036421_ABombar2"; }
+            get { return "201904041838531_MigracaoFinal"; }
         }
         
         string IMigrationMetadata.Source

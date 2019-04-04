@@ -9,6 +9,13 @@ namespace CadeMeuMedico.Controllers
 {
     public class TestesController : Controller
     {
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+
+
         public List<Usuario> GetTestes()
         {
             var db = new CadeMeuMedicoDB();
