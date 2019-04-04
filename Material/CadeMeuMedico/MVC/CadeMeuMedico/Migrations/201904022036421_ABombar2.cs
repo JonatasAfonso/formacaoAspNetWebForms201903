@@ -1,8 +1,7 @@
 namespace CadeMeuMedico.Migrations
 {
-    using System;
     using System.Data.Entity.Migrations;
-    
+
     public partial class ABombar2 : DbMigration
     {
         public override void Up()
